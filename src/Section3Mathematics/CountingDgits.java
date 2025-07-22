@@ -2,7 +2,7 @@ package Section3Mathematics;
 
 import java.util.Scanner;
 
-public class CoutingDgits {
+public class CountingDgits {
     public static void countingDigits(int num){
         if(num < 0) {
             System.out.println("Please Enter valid positive integer");
