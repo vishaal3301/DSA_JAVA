@@ -8,8 +8,8 @@ public class PalidromeNumber {
         int reverse = 0;
         int duplicate = number;
         while(duplicate != 0){
-            int temp = duplicate %10;
-            reverse = reverse * 10 +temp;
+            int lastDigit = duplicate %10;
+            reverse = reverse * 10 +lastDigit;
             duplicate /= 10;
 
         }

@@ -15,6 +15,11 @@ public class FactorialRecursion {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a Positive Integer");
         int number = scan.nextInt();
-        System.out.println("The factorial is: "+calculateFactorial(number));
+        if(number < 0){
+            System.out.println("Please enter Positive integer");
+        }else {
+            System.out.println("The factorial is: " + calculateFactorial(number));
+        }
     }
+
 }

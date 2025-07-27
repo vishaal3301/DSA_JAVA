@@ -8,7 +8,7 @@ public class TrailingZerosFactorial {
     public static int countZeros(int number){
         int factorial = 1;
         for(int i=2;i <=number; i++ ){
-            factorial = factorial * i;
+            factorial *=  i;
         }
 
         int result = 0;
