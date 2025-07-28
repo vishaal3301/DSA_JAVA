@@ -11,7 +11,7 @@ public class LCM {
            result++;
        }
 
-      
+
     }
 
     public static void main(String[] args) {
