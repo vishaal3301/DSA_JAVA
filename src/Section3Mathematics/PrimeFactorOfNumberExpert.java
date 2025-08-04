@@ -12,7 +12,7 @@ public class PrimeFactorOfNumberExpert {
             n = n/2;
         }
         while(n % 3 ==0 ){
-            System.out.print(n+"\t");
+            System.out.print(3+"\t");
             n = n/3;
         }
         for(int i=5;i*i<=n;i=i+6){
