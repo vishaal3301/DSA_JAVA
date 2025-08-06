@@ -29,16 +29,7 @@ public class SortedAllDivisiorOfNumberEfficient {
               }
     }
 
-    public static void grokSorted(int n) {
-        for (int i = 1; i * i <= n; i++) {
-            if (n % i == 0) {
-                System.out.print(i + "\t"); // Print the smaller divisor
-                if (i != n / i) { // Avoid printing square root twice for perfect squares
-                    System.out.print(n / i + "\t"); // Print the larger divisor
-                }
-            }
-        }
-    }
+
 
     public static void main(String[] args)throws IOException {
         BufferedReader Br =new BufferedReader(new InputStreamReader(System.in));
@@ -51,8 +42,7 @@ public class SortedAllDivisiorOfNumberEfficient {
         System.out.println("Sorted Factors");
         sortedAllDivisor(n);
         System.out.println("*".repeat(70));
-        System.out.println("Grok Sorted function ");
-        grokSorted(n);
+
 
 
     }
