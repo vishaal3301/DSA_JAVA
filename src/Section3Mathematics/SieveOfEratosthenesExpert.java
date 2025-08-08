@@ -1,42 +1,33 @@
 package Section3Mathematics;
-// this Sieve Of Eratosthenes is printing all prime numbers upto user input n.
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class SieveOfEratosthenesEfficient {
+public class SieveOfEratosthenesExpert {
 
-
-    public static void sieve(int n){
-        if(n <= 1) return;
+    public static void sieveExpert(int n){
+        if(n<=1) return;
 
         boolean[] flags = new boolean[n+1];
         Arrays.fill(flags,true);
 
-
-
-        for(int i=2;i*i<=n;i++){
+        for(int i=2; i<=n;i++){
             if(flags[i]){
-                for(int j=i*i;j<=n;j=j+i){
+                System.out.print(i+"\t");
+                for(int j = i*i;j<=n;j=j+i){
                     flags[j] =false;
                 }
             }
         }
-        for(int i=2;i<=n;i++){
-            if(flags[i]){
-                System.out.print(i+"\t");
-            }
-        }
-
     }
 
     public static void main(String[] args) throws IOException {
         BufferedReader Br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter a integer to print the prime numbers less than it");
+        System.out.println("Enter a integer to print Prime numbers less than that");
         String str = Br.readLine();
         int n = Integer.parseInt(str);
-        sieve(n);
+        sieveExpert(n);
     }
 }
