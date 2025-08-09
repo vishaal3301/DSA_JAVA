@@ -41,6 +41,7 @@ public class SortedAllDivisiorOfNumberEfficient {
         System.out.println("*".repeat(70));
         System.out.println("Sorted Factors");
         sortedAllDivisor(n);
+        System.out.println();
         System.out.println("*".repeat(70));
 
 
