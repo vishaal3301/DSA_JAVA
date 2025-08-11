@@ -1,0 +1,15 @@
+package Section4BitMagic;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class BitwiseNOT {
+    public static void main(String[] args) throws IOException {
+        BufferedReader Br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a Integer");
+        String str = Br.readLine();
+        int num = Integer.parseInt(str);
+        System.out.println("The NOT of Enter Integer is : "+(~num));
+    }
+}
