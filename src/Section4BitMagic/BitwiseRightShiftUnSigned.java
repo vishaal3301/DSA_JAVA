@@ -11,8 +11,8 @@ public class BitwiseRightShiftUnSigned {
         String str = Br.readLine();
         int num = Integer.parseInt(str);
 
-        System.out.println("The UnSigned Right Shift by 1 is: "+(num>>1));
-        System.out.println("The UnSigned Right Shift by 2 is: "+(num>>2));
-        System.out.println("The UnSigned Right Shift by 4 is: "+(num>>4));
+        System.out.println("The UnSigned Right Shift by 1 is: "+(num>>>1));
+        System.out.println("The UnSigned Right Shift by 2 is: "+(num>>>2));
+        System.out.println("The UnSigned Right Shift by 4 is: "+(num>>>4));
     }
 }
