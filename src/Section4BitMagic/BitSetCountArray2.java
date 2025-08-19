@@ -2,7 +2,7 @@ package Section4BitMagic;
 
 
 
-public class BitSetCountArray1 {
+public class BitSetCountArray2 {
     public static int[] tbl = new int[256];
 
     // 🔹 Static block runs only once when the class is loaded
