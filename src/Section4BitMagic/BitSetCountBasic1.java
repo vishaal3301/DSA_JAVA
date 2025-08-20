@@ -23,6 +23,8 @@ public class BitSetCountBasic1 {
         int n = Integer.parseInt(str);
 
         int setBits = countSetBits(n);
+        System.out.println("Number: "+n);
+        System.out.println("Binary: "+Integer.toBinaryString(n));
         System.out.println("the "+setBits+" Bits are 1");
 
     }
