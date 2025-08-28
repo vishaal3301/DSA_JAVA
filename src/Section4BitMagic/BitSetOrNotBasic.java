@@ -24,6 +24,9 @@ public class BitSetOrNotBasic {
         System.out.println("Enter a integer to check if that bit is SET or NOT");
         String bit = Br.readLine();
         int k =Integer.parseInt(bit);
+        System.out.println("Number: "+n);
+        System.out.println("Binary of Number: "+Integer.toBinaryString(n));
+
         isSet(n,k);
     }
 }
