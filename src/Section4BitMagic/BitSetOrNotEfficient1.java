@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class BitSetOrNotEfficient1 {
     public static void isSet(int n,int k){
-        int x = (1 << (k-1));
+        int x = (1 << (k-1));   //  n * (2^(k-1))
 
         if((n & x) != 0)
             System.out.println("Yes, the "+k+" th bit is SET");
