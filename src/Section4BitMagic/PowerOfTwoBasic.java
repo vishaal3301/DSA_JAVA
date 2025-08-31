@@ -13,7 +13,7 @@ public class PowerOfTwoBasic {
     }
 
     public static void main(String[] args) {
-        int n = 8;
+        int n = -8;
         System.out.println("Number: "+n);
         System.out.println("Binary: "+Integer.toBinaryString(n));
         System.out.println("The Number "+n+" is Power of 2 is: "+isPowerOfTwo(n));
